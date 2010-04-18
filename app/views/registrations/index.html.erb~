@@ -1,0 +1,4 @@
+<% @registrations.each do |registration| %>
+ <%= registration.name %> - <%= link_to "Delete", destroy_path(registration.id) %> - <%= link_to "edit", edit_registration(registration.id) %> <br />
+<% end %>
+

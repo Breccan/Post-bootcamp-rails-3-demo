@@ -1,0 +1,18 @@
+Things added after the bootcamp:
+
+Made new registration the homepage by removing index.html.erb in public and adding a root route to routes.rb
+
+Application layout in app/views/layouts/application.html.erb - This is shared between views
+
+Authlogic gem for login and user management. This uses the UserSession model which inherits from authologicSession and the acts_as_authentic
+part of the user model to establish a user as well as helpers in the application controller that are shared by all other controllers 
+due to their inheritance.
+
+A user with admin set to true can be created with rake db:seed after the user migrations have been run. This comes from db/seeds.rb 
+User: admin Pass: password
+
+Management interface for admins at admin/registration controller mostly just reusing the other partial but could be used to display more
+information and have more controls.
+
+A good excercise might be changing the app to allow for multiple events or adding user registration. 
+
